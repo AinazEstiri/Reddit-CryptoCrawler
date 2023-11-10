@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}CryptoStock{% endblock %}
+{% block content %} 
+<style>
+    h1{color: darkgreen;text-align:center}
+    p{text-align:center;}
+</style>
+<h1>$toCrypto</h1>
+<p>Reddit web crawler that lets you search for stock and crypto related subreddits.</br>
+Search for stock and crypto related subreddits</p> 
+
+<div class="container-fluid">
+    <form method="POST" class="d-flex" role="search">
+    <input class="form-control me-2" type="search" id="searchQuery" name="searchQuery" placeholder="Reddit Query Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</div> 
+
+{% endblock %}
